@@ -57,9 +57,9 @@ class _SebhaScreenState extends State<SebhaScreen> {
                 const Text(
                   "سَبِّحِ اسْمَ رَبِّكَ الأعلى",
                   style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 36,
-                    fontWeight: FontWeight.w700
+                      color: Colors.white,
+                      fontSize: 36,
+                      fontWeight: FontWeight.w700
                   ),
                 ),
                 const SizedBox(height: 16),
@@ -79,25 +79,28 @@ class _SebhaScreenState extends State<SebhaScreen> {
                         ),
                       ),
                     ),
-                    Column(
-                      children: [
-                        Text(
-                          azkar[zekrIndex],
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 36,
-                            fontWeight: FontWeight.w700,
+                    GestureDetector(
+                      onTap: onTapSebha,
+                      child: Column(
+                        children: [
+                          Text(
+                            azkar[zekrIndex],
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 36,
+                              fontWeight: FontWeight.w700,
+                            ),
                           ),
-                        ),
-                        Text(
-                          counter.toString(),
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 36,
-                            fontWeight: FontWeight.w700
+                          Text(
+                            counter.toString(),
+                            style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 36,
+                                fontWeight: FontWeight.w700
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     )
                   ],
                 )
